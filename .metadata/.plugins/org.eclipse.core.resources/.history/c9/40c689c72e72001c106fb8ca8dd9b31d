@@ -1,0 +1,37 @@
+package day1;
+
+import java.util.Scanner;
+
+public class GradesAverage {
+	
+	private static Scanner in;
+
+	public static void gradeFunc(int num)
+	{
+		int numStudents, grade, avg=0;
+		Scanner in = new Scanner(System.in);
+		int [] grades = new int[num];
+		for(int i=0;i<num;i++)
+		{
+			System.out.print("Enter the grade for student "+i+": ");
+			grade = in.nextInt();
+			if(grade>=0 && grade<=100) {
+				avg+= grade;
+				grades[i] = grade;
+			}
+			else {
+				i--;
+				System.out.println("Invalid grade, try again...");
+			}
+		}
+		System.out.println("Average grades: "+avg/num);
+	}
+
+	public static void main(String[] args) {
+		int numStudents;
+		in = new Scanner(System.in);
+		System.out.print("Enter number of Students: ");
+		numStudents = in.nextInt();
+		gradeFunc(numStudents);
+	}
+}

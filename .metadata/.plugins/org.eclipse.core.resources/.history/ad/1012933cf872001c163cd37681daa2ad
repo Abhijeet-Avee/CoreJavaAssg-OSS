@@ -1,0 +1,46 @@
+package Day2;
+
+abstract class Account{
+	private String memberName,accountNumber;
+	protected double accountBalance;
+	
+	public Account(String name, double initBal){
+		accountNumber = 10000 + (int)(Math.random()*89999) + "";
+		memberName = name;
+		accountBalance = initBal;
+	}
+	
+	public void deposit(double amount)
+	{
+		accountBalance += amount;
+	}
+	
+	abstract public double getBalance();
+	abstract public void withdraw(double amount);
+}
+
+class Savings extends Account {
+	private double interest = 5;
+	private double withdrawLimit = 10000;
+	
+	public Savings(String name, double initBal) {
+		super(name,initBal);
+	}
+	
+	public double getBalance() {
+		return (accountBalance + (accountBalance*0.05));
+	}
+	
+	public void withdraw(double amount) {
+		if(amount<=withdrawLimit && accountBalance>=amount)
+		{
+			accountBalance -= amount;
+			System.out.println("Debited amount:" + amount);
+			System.out.println("Updated balance: "+accountBalance);
+		}
+	}
+}
+
+public class BankingSystem {
+
+}

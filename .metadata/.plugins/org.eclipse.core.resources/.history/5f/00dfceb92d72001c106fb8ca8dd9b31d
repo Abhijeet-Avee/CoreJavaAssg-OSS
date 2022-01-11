@@ -1,0 +1,13 @@
+package day1;
+
+import java.util.Scanner;
+
+public class GradesAverage {
+
+	public static void main(String[] args) {
+		int numStudents;
+		Scanner in = new Scanner(System.in);
+		System.out.print("Enter number of Students: ");
+		
+	}
+}
