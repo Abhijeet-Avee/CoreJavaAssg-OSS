@@ -1,0 +1,18 @@
+package com.day2.q2;
+
+public class BookStore {
+	private Book books[];
+	
+	public BookStore(){
+		books= new Book[10];
+	}
+	
+	public void sell(String isbn,int noOfCopies) {
+		for(Book book:books) {
+			if(isbn.equalsIgnoreCase(book.getIsbn())) {
+				System.out.println("Book sold!! ");
+				System.out.println("Title: "+book.getBookTitle()());
+			}
+		}
+	}
+}

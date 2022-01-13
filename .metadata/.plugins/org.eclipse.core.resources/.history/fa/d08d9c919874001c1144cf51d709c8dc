@@ -1,0 +1,11 @@
+package com.day2.overriding;
+
+import java.util.Scanner;
+
+public class ApplicationClass {
+	static Scanner in;
+	
+	public static void main(String[] args) {
+		in = new Scanner(System.in);
+	}
+}

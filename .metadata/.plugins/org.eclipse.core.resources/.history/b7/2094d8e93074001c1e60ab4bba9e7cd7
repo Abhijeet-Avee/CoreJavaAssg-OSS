@@ -1,0 +1,25 @@
+package com.day2.q2;
+
+public class BookStore {
+	private Book books[];
+	
+	public BookStore(){
+		books= new Book[10];
+	}
+	
+	public void sell(String isbn,int noOfCopies) {
+		for(Book book:books) {
+			if(isbn.equalsIgnoreCase(book.getIsbn()) && book.getNumOfCopies()>=1) {
+				System.out.println("Book sold!! ");
+				System.out.println("Title: "+ book.getBookTitle());
+				book.setNumOfCopies(book.getNumOfCopies()-1);
+			}
+			else
+				System.out.println("OUT OF STOCK!!");
+		}
+	}
+	
+	public void order(String title, String author, String isbn,int noOfCopies) {
+		
+	}
+}
