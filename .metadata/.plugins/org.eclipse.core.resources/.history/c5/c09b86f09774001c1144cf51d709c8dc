@@ -1,5 +1,0 @@
-package com.day2.overriding;
-
-public class SportsCar extends Car{
-	
-}

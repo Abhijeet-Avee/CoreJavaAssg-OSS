@@ -1,7 +1,0 @@
-package com.day2.overriding;
-
-public class ApplicationClass {
-	public static void main(String[] args) {
-
-	}
-}
