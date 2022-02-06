@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.io.FileWriter"/>
 <fullyQualifiedTypeName name="java.io.BufferedWriter"/>
 <fullyQualifiedTypeName name="java.io.Serializable"/>
 <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
@@ -43,7 +42,6 @@
 <fullyQualifiedTypeName name="java.util.HashMap"/>
 <fullyQualifiedTypeName name="java.util.Map.Entry"/>
 <fullyQualifiedTypeName name="java.util.Comparator"/>
-<fullyQualifiedTypeName name="java.sql.Date"/>
 <fullyQualifiedTypeName name="com.test.q2.model.exceptions.DataAccessException"/>
 <fullyQualifiedTypeName name="com.test.q2.model.exceptions.CustomerNotFoundException"/>
 <fullyQualifiedTypeName name="com.test.q2.model.persistence.CustomerDao"/>
@@ -51,4 +49,15 @@
 <fullyQualifiedTypeName name="com.test.q2.model.service.CustomerService"/>
 <fullyQualifiedTypeName name="com.test.q2.model.service.CustomerServiceImpl"/>
 <fullyQualifiedTypeName name="com.test.q2.model.persistence.Customer"/>
+<fullyQualifiedTypeName name="java.time.LocalDate"/>
+<fullyQualifiedTypeName name="java.sql.Date"/>
+<fullyQualifiedTypeName name="com.productApp.model.exceptions.DataAccessException"/>
+<fullyQualifiedTypeName name="com.productApp.model.exceptions.ProductNotFoundException"/>
+<fullyQualifiedTypeName name="com.productApp.model.persistence.ProductDao"/>
+<fullyQualifiedTypeName name="com.productApp.model.persistence.ProductDaoImpl"/>
+<fullyQualifiedTypeName name="java.io.PrintWriter"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="com.productApp.model.persistence.Product"/>
+<fullyQualifiedTypeName name="com.productApp.model.service.ProductService"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
 </qualifiedTypeNameHistroy>

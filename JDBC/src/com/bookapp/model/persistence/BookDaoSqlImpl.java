@@ -37,9 +37,7 @@ public class BookDaoSqlImpl implements BookDao{
 	private static void createTable(Connection connection) throws DataAccessException {
 		try {
 			Statement statement = connection.createStatement();
-			statement.execute("create table book(id int primary key auto_increment,"
-					+ "isbn varchar(15),title varchar(50) not null,author varchar(50) not null,"
-					+ "pubdate date not null,price double not null,unique key (isbn))");
+			statement.execute("create table book(id int primary key auto_increment,isbn varchar(15),title varchar(50) not null,author varchar(50) not null,pubdate date not null,price double not null,unique key (isbn))");
 			System.out.println("Table created!!");
 		}catch(SQLException e) {
 			throw new DataAccessException(e);
